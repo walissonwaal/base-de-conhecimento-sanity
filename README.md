@@ -20,7 +20,7 @@ Para utilizar os recursos deste repositório:
 1. **Clone o Repositório:**
 
    ```bash
-   git clone https://github.com/walissonwaal/base-de-conhecimento-sanity
+   git clone https://github.com/walissonwaal/base-de-conhecimento-sanity.git
    ```
 
 2. **Navegue pelos Arquivos**:
