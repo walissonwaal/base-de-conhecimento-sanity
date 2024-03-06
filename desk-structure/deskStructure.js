@@ -1,6 +1,6 @@
 export const deskStructure = (S) =>
   S.list()
-    .title('Portal Assefaz')
+    .title('Título do Sanity Studio')
     .items([
       S.listItem()
         .title('Página Inicial')
@@ -8,13 +8,11 @@ export const deskStructure = (S) =>
           S.list()
             .title('Seções')
             .items([
-              S.documentTypeListItem('heroSchema').title('Banners'),
-              S.documentTypeListItem('calltoAction').title('CTAs'),
-              S.documentTypeListItem('cardInfo').title('Cards 1'),
-              S.documentTypeListItem('cardInfo2').title('Cards 2'),
-              S.documentTypeListItem('appAssefaz').title('App Assefaz'),
-              S.documentTypeListItem('downloads').title('Conteúdos de Apoio'),
-              S.documentTypeListItem('footer').title('Rodapé'),
+              S.documentTypeListItem('schema01').title('Header'),
+              S.documentTypeListItem('schema02').title('Hero'),
+              S.documentTypeListItem('schema03').title('Sidebar'),
+              S.documentTypeListItem('schema04').title('Cta'),
+              S.documentTypeListItem('schema05').title('Footer'),
             ])
         ),
       S.divider(),
@@ -22,8 +20,8 @@ export const deskStructure = (S) =>
         'Páginas'
       ),
       S.divider(),
-      S.documentTypeListItem('menuItem').title('Menu'),
+      S.documentTypeListItem('menuSchema').title('Menu'),
       S.divider(),
-      S.documentTypeListItem('noticias').title('Notícias'),
+      S.documentTypeListItem('newsSchema').title('Notícias'),
       S.divider(),
     ]);
