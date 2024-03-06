@@ -7,18 +7,10 @@ import {
   CiTextAlignJustify
 } from 'react-icons/ci'
 import ExternalLinkRenderer from './components/ExternalLinkRenderer'
-// import Button from './components/Button';
 import ButtonLink from './components/ButtonLink';
-// import Table from './components/Table';
-// import ColorSelector from './components/SelectColorText';
-
 const HighlightIcon = () => <span style={{fontWeight: 'bold'}}>H</span>
-
 const ButtonLinkIcon = () => <span style={{fontWeight: 'bold'}}>B</span>
-
 const HighColorOrangeIcon = () => <span style={{fontWeight: 'bold'}}>L</span>
-
-// const TableIcon = () => <span style={{fontWeight: 'bold'}}>tabela</span>
 
 const HighlightDecorator = props => (
   <span style={{backgroundColor: 'yellow'}}>{props.children}</span>
@@ -129,43 +121,7 @@ export default defineType({
             icon: ButtonLinkIcon,
             component: ButtonLink
           },
-          
         ],
-        // annotations: [
-        //   {
-        //     name: 'link',
-        //     type: 'object',
-        //     title: 'External link',
-        //     fields: [
-        //       {
-        //         name: 'href',
-        //         type: 'url',
-        //         title: 'URL'
-        //       },
-        //       {
-        //         title: 'Open in new tab',
-        //         name: 'blank',
-        //         description: 'Read https://css-tricks.com/use-target_blank/',
-        //         type: 'boolean'
-        //       }
-        //     ]
-        //   },
-        //   {
-        //     name: 'internalLink',
-        //     type: 'object',
-        //     title: 'Internal link',
-        //     fields: [
-        //       {
-        //         name: 'reference',
-        //         type: 'reference',
-        //         title: 'Reference',
-        //         to: [
-        //           { type: 'noticias' },
-        //         ]
-        //       }
-        //     ]
-        //   }
-        // ]
         annotations: [
           {
             title: 'URL',
@@ -188,9 +144,6 @@ export default defineType({
         ]
       }
     }),
-    // You can add additional types here. Note that you can't use
-    // primitive types such as 'string' and 'number' in the same array
-    // as a block type.
     defineArrayMember({
       type: 'image',
       options: {hotspot: true},
@@ -202,15 +155,5 @@ export default defineType({
         }
       ]
     }),
-    // defineArrayMember({
-    //   type: 'array',
-    //   fields: [
-    //     {
-    //       title: 'Tabela',
-    //       name: 'table',
-    //       type: 'table'
-    //     }
-    //   ]
-    // })
   ]
 })
